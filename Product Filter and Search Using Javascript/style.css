@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #cec9c93e;
+}
+.wrappre {
+  width: 100%;
+  margin: 0 auto;
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  margin-left: 20%;
+  background-color: transparent;
+  width: 50%;
+  border-bottom: 2px solid black;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #8d8686;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: rgba(0, 0, 0, 0.292);
+  cursor: pointer;
+  color: white;
+}
+#search-container button:hover {
+  background-color: #8d8686;
+  transition: ease-in 0.5s;
+  border-radius: 2px;
+}
+/* #buttons {
+  margin-left: 1.5em;
+} */
+.button-value {
+  /* border: 2px solid black; */
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: #8d8686;
+  color: white;
+  cursor: pointer;
+}
+.active {
+  background-color: #837c7c9f;
+  color: black;
+}
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5em;
+  padding: 2em 0;
+}
+.card {
+  background-color: #eae4e4;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 1em5;
+}
