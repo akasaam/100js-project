@@ -1,41 +1,41 @@
-// const searchInput = document.getElementById("search-input");
+const searchInput = document.getElementById("search-input");
 
-// const products = ["Shirts", "Pants", "Shoes", "Bags"];
-// let i = 0;
-// let j = 0;
+const products = ["Shirts", "Pants", "Shoes", "Bags"];
+let i = 0;
+let j = 0;
 
-// function typingAnimation() {
-//   if (j < products[i].length) {
-//     searchInput.setAttribute("placeholder", products[i].slice(0, j + 1));
-//     j++;
-//   } else {
-//     j = 0;
-//     i++;
-//     if (i >= products.length) {
-//       i = 0;
-//     }
-//   }
+function typingAnimation() {
+  if (j < products[i].length) {
+    searchInput.setAttribute("placeholder", products[i].slice(0, j + 1));
+    j++;
+  } else {
+    j = 0;
+    i++;
+    if (i >= products.length) {
+      i = 0;
+    }
+  }
 
-//   setTimeout(typingAnimation, 400);
-// }
+  setTimeout(typingAnimation, 400);
+}
 
-// typingAnimation();
+typingAnimation();
 // Add product
-// const addProduct = (product) => {
-//   products.push(product);
-// };
+const addProduct = (product) => {
+  products.push(product);
+};
 
 // Usage
-// addProduct("Hats");
-// addProduct("dhoti");
-// addProduct("kurta");
-// addProduct("Watches");
-// addProduct("Socks");
-// addProduct("Cargo pants");
-// addProduct("Blazer");
-// addProduct("Sweaters");
-// addProduct("trousers");
-// addProduct("jeans");
+addProduct("Hats");
+addProduct("dhoti");
+addProduct("kurta");
+addProduct("Watches");
+addProduct("Socks");
+addProduct("Cargo pants");
+addProduct("Blazer");
+addProduct("Sweaters");
+addProduct("trousers");
+addProduct("jeans");
 // end
 
 let tags = {
