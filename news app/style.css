@@ -2,5 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+}
+/* global css */
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: #000000;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.16);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 1rem;
+}
+.nav-container .logo {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+#search-input {
+  border: none;
+  max-width: 400px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+#search-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#blog-container {
+  margin: 3rem 0;
+
+  display: flex;
 }
