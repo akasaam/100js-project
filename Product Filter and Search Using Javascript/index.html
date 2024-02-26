@@ -22,10 +22,16 @@
         <button id="search">Srarch</button>
       </div>
       <div id="buttons">
-        <button class="button-value">All</button>
-        <button class="button-value">Topware</button>
-        <button class="button-value">Bottomware</button>
-        <button class="button-value">Accessories</button>
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topware')">
+          Topware
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomware')">
+          Bottomware
+        </button>
+        <button class="button-value" onclick="filterProduct('Accessories')">
+          Accessories
+        </button>
       </div>
       <div id="products"></div>
     </div>

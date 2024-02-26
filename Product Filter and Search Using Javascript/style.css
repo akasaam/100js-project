@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #cec9c93e;
+  background-color: #fbfafa3e;
 }
 .wrappre {
   width: 100%;
@@ -43,11 +43,12 @@ body {
   margin-left: 1.5em;
 } */
 .button-value {
-  /* border: 2px solid black; */
+  border: 2px solid black;
+  color: black;
   border-radius: 50px;
   padding: 10px 15px;
-  background-color: #8d8686;
-  color: white;
+  background-color: transparent;
+
   cursor: pointer;
 }
 .active {
@@ -75,5 +76,30 @@ body {
 img {
   max-width: 100%;
   object-fit: contain;
+  mix-blend-mode: color-burn;
   height: 1em5;
+}
+.container {
+  padding-top: 1em;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+@media screen and(max-width:720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto;
+    grid-column-gap: 1em;
+  }
 }
