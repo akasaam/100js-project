@@ -4,7 +4,7 @@ const blogContainer = document.getElementById("blog-container");
 
 async function fetchRandomNews() {
   try {
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=12&apiKey=${apikey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apiKey=${apikey}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
     return data.articles; // Changed variable name to 'articles'
@@ -24,9 +24,18 @@ function displayBlogs(articles) {
     img.src = article.urlToImage;
     img.alt = article.title;
     const title = document.createElement("h2");
-    title.textContent = article.title;
+    const truncatedTitel =
+      article.title.length > 30
+        ? article.title.slice(0, 30) + "..."
+        : article.title;
+    title.textContent = truncatedTitel;
     const description = document.createElement("p");
-    description.textContent = article.description;
+
+    const truncatedDes =
+      article.description.length > 100
+        ? article.description.slice(0, 100) + "..."
+        : article.description;
+    description.textContent = truncatedDes;
 
     blogCard.appendChild(img);
     blogCard.appendChild(title);
