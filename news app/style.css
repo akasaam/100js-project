@@ -9,7 +9,7 @@ body {
 }
 /* global css */
 .obj-width {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -62,7 +62,7 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   padding: 1rem;
-  margin: 10px;
+  margin: 10px 22px;
 }
 .blog-card:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -97,5 +97,21 @@ nav {
   }
   .blog-card {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-container .logo {
+    font-size: 1.4rem;
+  }
+  #search-input {
+    width: 200px;
+    padding: 10px 10px;
+  }
+  #search-btn {
+    padding: 10px;
+  }
+  .blog-card {
+    width: 44%;
   }
 }
