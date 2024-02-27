@@ -9,7 +9,7 @@ body {
 }
 /* global css */
 .obj-width {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -62,7 +62,7 @@ nav {
   border-radius: 10px;
   cursor: pointer;
   padding: 1rem;
-  margin: 10px 22px;
+  margin: 10px;
 }
 .blog-card:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -100,7 +100,7 @@ nav {
   }
 }
 
-@media (max-width: 900px) {
+/* @media (min-width: 500px) {
   .nav-container .logo {
     font-size: 1.4rem;
   }
@@ -114,4 +114,4 @@ nav {
   .blog-card {
     width: 44%;
   }
-}
+} */
